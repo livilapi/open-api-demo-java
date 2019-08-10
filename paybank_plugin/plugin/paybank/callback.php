@@ -42,3 +42,4 @@ if (!insert_point($cParams->mid, $cParams->point, '포인트충전 - PayBank', '
 }
 
 die(print('{"data": "SUCCESS"}'));
+?>
