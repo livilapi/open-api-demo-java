@@ -11,3 +11,4 @@ include_once('_config.php');
 include_once('point_popup.skin.php');
 
 include_once(G5_PATH.'/tail.sub.php');
+?>
