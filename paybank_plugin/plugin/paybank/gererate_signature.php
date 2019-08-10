@@ -36,3 +36,4 @@
   $signature = strtoupper(md5($sign_string));
 
   echo $signature;
+?>
