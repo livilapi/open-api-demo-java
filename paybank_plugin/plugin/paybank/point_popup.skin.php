@@ -17,7 +17,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 			<li>- PayBank 앱을 설치하시기 바랍니다.</li>
 			<li>
 				<a href="https://play.google.com/" target="_blank" class="btn_app_download"><img src="img/btn_app_download_google.png" alt="Google Play"/></a>
-				<!-- <a href="https://itunes.apple.com/app/" target="_blank" class="btn_app_download"><img src="img/btn_app_download_apple.png" alt="Apple App Store"/></a> -->
+				<a href="https://itunes.apple.com/app/" target="_blank" class="btn_app_download"><img src="img/btn_app_download_apple.png" alt="Apple App Store"/></a>
 			</li>
 		</ul>
 </div>
