@@ -13,10 +13,10 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
     <div class="tbl_head01 tbl_wrap">
 		<ul style="list-style:none;margin:0;padding:0;line-height:2em;">
-			<li>- 빗컴페이 앱를 이용해서 결제할 수 있습니다.</li>
-			<li>- 빗컴페이 앱을 설치하시기 바랍니다.</li>
+			<li>- PayBank 앱를 이용해서 결제할 수 있습니다.</li>
+			<li>- PayBank 앱을 설치하시기 바랍니다.</li>
 			<li>
-				<a href="https://play.google.com/store/apps/details?id=com.ffk.originalbitcom" target="_blank" class="btn_app_download"><img src="img/btn_app_download_google.png" alt="Google Play"/></a>
+				<a href="https://play.google.com/" target="_blank" class="btn_app_download"><img src="img/btn_app_download_google.png" alt="Google Play"/></a>
 				<!-- <a href="https://itunes.apple.com/app/" target="_blank" class="btn_app_download"><img src="img/btn_app_download_apple.png" alt="Apple App Store"/></a> -->
 			</li>
 		</ul>
@@ -88,8 +88,7 @@ async function submit() {
 		$.ajax({
 			cache: true,
 			type: "POST",
-			url:  "http://payapi.excatch.com/api/bus/qrcode/create", // Test API Server
-			// url:  "https://payapi.bitcom.com/api/bus/qrcode/create", // Real Operating API Server
+			url:  ".....", // Test API Server
 			data: params,
 			error: function (jqXHR, exception) {
 				console.error(jqXHR, exception);
@@ -108,7 +107,7 @@ async function submit() {
 
 		setInterval(async () => {
 			var sReceipt = await $.get('./polling_receipt.php?ORN=' + params.orderNum);
-			if (sReceipt == 'BitcomPay-ORN-' + params.orderNum) {
+			if (sReceipt == 'PayBank-ORN-' + params.orderNum) {
 				location.href = '/bbs/point.php';
 			} 
 		}, 1*1000);
